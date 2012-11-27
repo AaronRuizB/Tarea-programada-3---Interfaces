@@ -20,7 +20,7 @@ esto con la Tecnología mencionada anteriormente (Bootstrap).
 Algunas librerías  investigadas
 -------------------------------
 
-1. Filefuntions.js:
+1. FileFuntions.js:
 -------------
 
    * Contiene las funciones relacionadas con los ficheros, es decir, abir, guardar y crear presentación.
