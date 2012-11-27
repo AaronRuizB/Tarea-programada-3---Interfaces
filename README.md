@@ -78,54 +78,26 @@ Estructura de los datos
 Forma de compilación, ejecución y utilización de la aplicación
 ---------------------------------------------------------------
 
-1. Crear una carpeta llamada Proyecto1, en C:/.
+1. Crear una carpeta llamada Proyecto3, en C:/
 
-2. En la carpeta Proyecto1:
+2. En la carpeta Proyecto3:
 
-   a) Crear una carpeta llamada  chrome.
+   a) Crear una carpeta llamada  source.
    
-   b) Crear una carpeta llamada default.
+   b) Pegar dentro los archivos encontrados en el github como proeyecto 3 - interfaces gráficas
+   enlace: https://github.com/aaruiz89/Tarea-programada-3---Interfaces
    
-   c)Crear un archivo  llamado application.ini  con lo siguiente:
+   c)Ejecutar el Adobe Air,
+   Adobe Air cuenta con la herramienta adl que permite probar la correcta ejecución de las aplicaciones. 
+   Esta herramienta se puede ejecutar desde el directorio en donde se instaló el SDK de Adobe Air,
+   por ejemplo: C:/AdobeAirSDK. Por tanto la ejecución se puede realizar de la siguiente
+   forma (desde el directorio tinyhtmleditor\source):
+   
+   d) Ejecutar Adobe Air con el siguiente comando en consola:  C:\AdobeAirSDK\bin\adl application.xml
+   
+   Luego abrir el "Editor de html" y empezar la aplicación.
               
 
-                        [App]
-                              Vendor=Silvia
-                        Name=Proyecto1
-                        Version=1.0
-                        BuildID=20100901
-                        ID=sdelgado@itcr.ac.cr
-                        
-                        [Gecko]
-                        MinVersion=1.8
-                        MaxVersion=16.*
-                        
-                        
-   d)Crear un archivo  chrome.manifest con lo siguiente:
-   
-                       manifest chrome/chrome.manifest
-                       
-                       
- 3.  En la carpeta  default :
-
-   a)Crear una carpeta preferences  y en esta crear un archivo prefs.js con lo siguiente:
-   
-                       pref("toolkit.defaultChromeURI", "chrome://Proyecto1/content/main.xul");
-           
-           
-4.En la carpeta chrome:
-
-  a)Crear  una carpeta content .
-  
-  b)Crear un archivo chrome.manifest con lo siguiente: 
-   
-                       content Proyecto1 content/
-                 
-5. En la carpeta content:
-
-  a) Descargar en esta carpeta la compilador de coffeescript y  la librería d3.js.
-  
-  b) Copiar a esta carpeta los archivos main.xul ,main.coffee y reveal.js que se adjuntan.
  
 
 Ejemplo de Datos
@@ -151,6 +123,24 @@ Ejemplo de Datos
                    </slide>
                 </presentation>
 
+Además, se utilizán datos de pre-llenado, para facilitarle al usuario la ulitización de la apliacción, con el mínimo
+esfuerzo. Para esto, se le brindará la siguiente estructura en pantala:
+
+
+<!--Aqui van las diapositivas-->
+<!--________________________________________________-->
+    <div class="slide" id="slide3">
+      <section class="middle">
+         <hgroup>
+           <h2>
+             TITULO
+           </h2>
+         </hgroup>
+         <p> CONTENIDO</p>
+         <img src= -URL DE LA IMAGEN-></img>
+      </section>
+    </div>
+
                 
                 
 Limitaciones observadas y posibles mejoras 
@@ -158,11 +148,17 @@ Limitaciones observadas y posibles mejoras
 
 Limitaciones:
 
-   1.
+   1.Se tuvieron limitaciones con el Adobe Air, ya que no se logró empaquetar en un .air
    
 Mejoras:
 
-   1.
+   1. Se creó el manual de usuario en el sitio web
+   2. Se modificó el tema de la aplicación
+   3. Se crearon botones con tooltips, para guiar al ususario, en vez de botones no visibles dentro de un manú
+   4. Se implementó un archivo style.css, en donde se definieron los tipos y colores de las diapositivas.
+   5. Se aprendió sobre bootstrap, dentro de las mejoras, la herramienta cuenta como parte, ya que contienen 
+      suficiente documentación en internet, además de al dada por el Profesor en el curso de Interfaces Gráficas.
+
    
    
  by Silvia Delgado y Aaron Ruiz
